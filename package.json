@@ -15,7 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "husky && tsdx build",
+    "prepare": "husky",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "storybook dev -p 6006",
@@ -25,11 +25,6 @@
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
   },
   "name": "pristine",
   "author": "Fajar Septiawan",
@@ -63,6 +58,7 @@
     "eslint-plugin-typescript-sort-keys": "^3.2.0",
     "eslint-plugin-unused-imports": "^1.1.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "npm-only-allow": "^1.2.6",
     "patch-package": "^8.0.0",
     "react": "^18.2.0",
