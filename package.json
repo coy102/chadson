@@ -26,16 +26,16 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "name": "pristine",
+  "name": "chadson",
   "author": "Fajar Septiawan",
-  "module": "dist/pristine.esm.js",
+  "module": "dist/chadson.esm.js",
   "size-limit": [
     {
-      "path": "dist/pristine.cjs.production.min.js",
+      "path": "dist/chadson.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/pristine.esm.js",
+      "path": "dist/chadson.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -78,5 +78,19 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.4.4"
-  }
+  },
+  "description": "chadson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coy102/pristine.git"
+  },
+  "keywords": [
+    "chadson",
+    "tailwind",
+    "shadcn"
+  ],
+  "bugs": {
+    "url": "https://github.com/coy102/pristine/issues"
+  },
+  "homepage": "https://github.com/coy102/pristine#readme"
 }
