@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && pnpm build-tailwind",
+    "build-tailwind": "npx tailwindcss -o ./dist/tailwind.css -i ./src/tailwind.css --minify",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "husky",
@@ -67,6 +68,7 @@
     "npm-only-allow": "^1.2.6",
     "patch-package": "^8.0.0",
     "postcss": "^8.4.38",
+    "rollup-plugin-postcss": "^4.0.2",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "react": "^18.2.0",
