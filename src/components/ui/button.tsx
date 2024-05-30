@@ -9,12 +9,12 @@ import './button.css'
 const buttonVariants = cva('button-wrapper', {
   variants: {
     variant: {
-      default: 'button-default',
-      destructive: 'button-destructive',
-      outline: 'button-outline',
-      secondary: 'button-secondary',
-      ghost: 'button-ghost',
-      link: 'button-link',
+      default: 'x-button-default',
+      destructive: 'x-button-destructive',
+      outline: 'x-button-outline',
+      secondary: 'x-button-secondary',
+      ghost: 'x-button-ghost',
+      link: 'x-button-link',
     },
     size: {
       default: 'h-10 px-4 py-2',
