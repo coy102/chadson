@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .x-button-wrapper {
+  .x-btn-wrapper {
     @apply inline-flex 
         items-center
         justify-center 
@@ -21,27 +21,27 @@
         disabled:opacity-50;
   }
 
-  .x-button-default {
+  .x-btn-default {
     @apply bg-primary text-primary-foreground hover:bg-primary/90;
   }
 
-  .x-button-destructive {
+  .x-btn-destructive {
     @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
   }
 
-  .x-button-outline {
+  .x-btn-outline {
     @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
   }
 
-  .x-button-secondary {
+  .x-btn-secondary {
     @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
   }
 
-  .x-button-ghost {
+  .x-btn-ghost {
     @apply hover:bg-accent hover:text-accent-foreground;
   }
 
-  .x-button-link {
+  .x-btn-link {
     @apply text-primary underline-offset-4 hover:underline;
   }
 }

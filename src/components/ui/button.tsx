@@ -6,15 +6,15 @@ import { cn } from '../../libs/utils'
 
 import './button.css'
 
-const buttonVariants = cva('button-wrapper', {
+const buttonVariants = cva('x-btn-wrapper', {
   variants: {
     variant: {
-      default: 'x-button-default',
-      destructive: 'x-button-destructive',
-      outline: 'x-button-outline',
-      secondary: 'x-button-secondary',
-      ghost: 'x-button-ghost',
-      link: 'x-button-link',
+      default: 'x-btn-default',
+      destructive: 'x-btn-destructive',
+      outline: 'x-btn-outline',
+      secondary: 'x-btn-secondary',
+      ghost: 'x-btn-ghost',
+      link: 'x-btn-link',
     },
     size: {
       default: 'h-10 px-4 py-2',
@@ -22,10 +22,20 @@ const buttonVariants = cva('button-wrapper', {
       lg: 'h-11 rounded-md px-8',
       icon: 'h-10 w-10',
     },
+    rounded: {
+      default: 'rounded-md',
+      sm: 'rounded-sm',
+      lg: 'rounded-lg',
+      xl: 'rounded-xl',
+      xxl: 'rounded-2xl',
+      none: 'rounded-none',
+      full: 'rounded-full',
+    },
   },
   defaultVariants: {
     variant: 'default',
     size: 'default',
+    rounded: 'default',
   },
 })
 
