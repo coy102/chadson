@@ -1,11 +1,10 @@
 {
-  "version": "0.1.11-beta",
+  "version": "0.1.14-beta",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
@@ -45,6 +44,7 @@
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-avatar": "^1.0.4",
     "@size-limit/preset-small-lib": "^11.1.2",
     "@storybook/addon-essentials": "^8.0.6",
     "@storybook/addon-info": "^5.3.21",

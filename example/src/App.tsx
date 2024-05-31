@@ -1,6 +1,6 @@
 import './App.css'
 
-import { Button } from '../../.'
+import { Button } from '../../'
 function App() {
   return (
     <>

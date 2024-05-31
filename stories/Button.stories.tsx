@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react'
 import React from 'react'
 
-import { Button, ButtonProps } from '../src/components/ui/button'
+import { Button, ButtonProps } from '../src/components/Button'
 
 const meta: Meta = {
   title: 'Button',
@@ -55,8 +55,6 @@ const Template: StoryFn<ButtonProps> = () => (
   </>
 )
 
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({})
 
 Default.args = {}

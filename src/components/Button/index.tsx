@@ -1,10 +1,10 @@
 import { Slot } from '@radix-ui/react-slot'
 import { cva, VariantProps } from 'class-variance-authority'
-import * as React from 'react'
+import React from 'react'
 
 import { cn } from '../../libs/utils'
 
-import './button.css'
+import './style.css'
 
 const buttonVariants = cva('x-btn-wrapper', {
   variants: {

@@ -1,4 +1,4 @@
 import './tailwind.css'
 
-export * from './components/ui/button'
+export * from './components'
 export * from './libs/withChadson'
