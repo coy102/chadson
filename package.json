@@ -1,8 +1,21 @@
 {
-  "version": "0.1.14-beta",
+  "version": "0.1.24-beta",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/chadson.esm.js",
+  "name": "chadson",
+  "author": "Fajar Septiawan",
+  "size-limit": [
+    {
+      "path": "dist/chadson.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/chadson.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "files": [
     "dist"
   ],
@@ -11,8 +24,8 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "cross-env NODE_ENV=production tsdx build && pnpm build-tailwind",
-    "build-tailwind": "npx tailwindcss -o ./dist/tailwind.css -i ./src/tailwind.css --minify",
+    "build": "cross-env NODE_ENV=production tsdx build",
+    "build-tailwind": "npx tailwindcss -o ./dist/chadson.css -i ./src/tailwind.css --minify",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "husky",
@@ -26,25 +39,12 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "name": "chadson",
-  "author": "Fajar Septiawan",
-  "module": "dist/chadson.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/chadson.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/chadson.esm.js",
-      "limit": "10 KB"
-    }
-  ],
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.24.4",
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
-    "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-slot": "^1.0.2",
     "@size-limit/preset-small-lib": "^11.1.2",
     "@storybook/addon-essentials": "^8.0.6",
     "@storybook/addon-info": "^5.3.21",
@@ -74,6 +74,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "rollup-plugin-import-css": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^11.1.2",
     "storybook": "^8.0.6",

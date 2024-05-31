@@ -1,10 +1,13 @@
 import './App.css'
 
-import { Button } from '../../'
+import { Button, Avatar, AvatarFallback } from '../..'
 function App() {
   return (
     <>
       <Button>Button</Button>
+      <Avatar>
+        <AvatarFallback>Test</AvatarFallback>
+      </Avatar>
     </>
   )
 }
