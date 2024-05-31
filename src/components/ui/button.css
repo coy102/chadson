@@ -1,0 +1,52 @@
+@tailwind components;
+
+@layer components {
+  .x-btn-wrapper {
+    @apply inline-flex 
+        items-center
+        justify-center 
+        whitespace-nowrap 
+        text-sm 
+        font-medium
+      ring-offset-background
+        transition-colors 
+        focus-visible:outline-none 
+        focus-visible:ring-2
+      focus-visible:ring-ring 
+        focus-visible:ring-offset-2 
+        disabled:pointer-events-none 
+        disabled:opacity-50;
+  }
+
+  .x-btn-outline-base {
+    @apply bg-transparent hover:bg-accent border;
+  }
+
+  .x-btn-default {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .x-btn-default-outline {
+    @apply text-primary border-primary x-btn-outline-base;
+  }
+
+  .x-btn-destructive {
+    @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+  }
+
+  .x-btn-outline {
+    @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+  }
+
+  .x-btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+
+  .x-btn-ghost {
+    @apply hover:bg-accent hover:text-accent-foreground;
+  }
+
+  .x-btn-link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+}
