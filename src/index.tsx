@@ -1,4 +1,6 @@
 import './tailwind.css'
 
-export * from './components/ui/button'
+export * from './components/Button'
+export * from './components/Avatar'
+
 export * from './libs/withChadson'
