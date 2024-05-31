@@ -20,10 +20,39 @@ const meta: Meta = {
 
 export default meta
 
-const Template: StoryFn<ButtonProps> = args => (
-  <Button variant="destructive" {...args}>
-    Button
-  </Button>
+const containedButton = [
+  {
+    variant: 'default',
+    label: 'Default',
+  },
+  {
+    variant: 'secondary',
+    label: 'Secondary',
+  },
+  {
+    variant: 'destructive',
+    label: 'Destructive',
+  },
+  {
+    variant: 'ghost',
+    label: 'Ghost',
+  },
+  {
+    variant: 'link',
+    label: 'Link',
+  },
+]
+
+const Template: StoryFn<ButtonProps> = () => (
+  <>
+    <div className="flex flex-row gap-2">
+      {containedButton.map(btn => (
+        <Button variant={btn.variant as ButtonProps['variant']} key={btn.label}>
+          {btn.label}
+        </Button>
+      ))}
+    </div>
+  </>
 )
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

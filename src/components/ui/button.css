@@ -1,6 +1,4 @@
-@tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 @layer components {
   .x-btn-wrapper {
@@ -8,7 +6,6 @@
         items-center
         justify-center 
         whitespace-nowrap 
-        rounded-md 
         text-sm 
         font-medium
       ring-offset-background
@@ -21,8 +18,16 @@
         disabled:opacity-50;
   }
 
+  .x-btn-outline-base {
+    @apply bg-transparent hover:bg-accent border;
+  }
+
   .x-btn-default {
     @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .x-btn-default-outline {
+    @apply text-primary border-primary x-btn-outline-base;
   }
 
   .x-btn-destructive {

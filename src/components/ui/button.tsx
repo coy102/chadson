@@ -10,7 +10,9 @@ const buttonVariants = cva('x-btn-wrapper', {
   variants: {
     variant: {
       default: 'x-btn-default',
+      'default-outline': 'x-btn-default-outline',
       destructive: 'x-btn-destructive',
+      'destructive-outline': 'x-btn-destructive-outline',
       outline: 'x-btn-outline',
       secondary: 'x-btn-secondary',
       ghost: 'x-btn-ghost',
@@ -46,9 +48,9 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, rounded, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
-    return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />
+    return <Comp className={cn(buttonVariants({ variant, size, className, rounded }))} ref={ref} {...props} />
   }
 )
 Button.displayName = 'Button'
