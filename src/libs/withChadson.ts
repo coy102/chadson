@@ -4,7 +4,6 @@ import borderRadius from '../theme/borderRadius'
 import colors from '../theme/colors'
 
 const config = {
-  darkMode: ['class'],
   content: ['./node_modules/chadson/components/ui/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
