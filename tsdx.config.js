@@ -1,7 +1,6 @@
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 const postcss = require('rollup-plugin-postcss')
-const preserveDirectives = require('rollup-plugin-preserve-directives')
 
 const path = require('path')
 
